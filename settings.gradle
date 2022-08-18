@@ -1,0 +1,6 @@
+rootProject.name = 'stateful-sample'
+include ':ejb-module'
+include ':web-module'
+
+project(':ejb-module').projectDir = "$rootDir/ejb-module" as File
+project(':web-module').projectDir = "$rootDir/web-module" as File
